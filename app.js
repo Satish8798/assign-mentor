@@ -20,7 +20,7 @@ app.use("/mentor",mentorRouter);
 app.use("/student",studentRouter);
 
 
-app.listen(process.env.PORT || 3000)
+app.listen(process.env.PORT);
 
 
 

@@ -4,6 +4,7 @@
   "description": "Day41 task of assign mentor",
   "main": "app.js",
   "scripts": {
+    "start":"node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

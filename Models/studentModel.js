@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const model= mongoose.model;
 const Schema = mongoose.Schema;
 
+//schema for student
 const studentSchema = new Schema({
     name: {
         type: String,
@@ -19,9 +20,10 @@ const studentSchema = new Schema({
         unique: true
     },
     assignedMentor:{
-        type: String
+        type: mongoose.ObjectId
     }
 });
 
+//creating model using student schema
 student = model("students",studentSchema);
 module.exports = student;

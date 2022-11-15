@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const model= mongoose.model;
 const Schema = mongoose.Schema;
 
+//creating schema for mentor
 const mentorSchema = new Schema({
     name: {
         type: String,
@@ -18,9 +19,10 @@ const mentorSchema = new Schema({
         required: true,
         unique: true
     },
-    assignedStudents:[]
+    assignedStudents:[mongoose.ObjectId]
 });
 
+//creating model for mentor schema
 mentor = model("mentors",mentorSchema);
 module.exports = mentor;
 
